@@ -1,0 +1,37 @@
+<ion-view view-title="VIEW GAME IN REAL TIME ">
+<ion-content>
+<ul>
+  <div ng-repeat="tennisdata in tennisdatas">
+    <div class="card positive" style="background-color:#e6ffff;" on-double-tap="dblclickremovedata(tennisdata._id)">
+      <p class="dark">開始時間:{{tennisdata.startdata.starttime | date:'yyyy年MM月dd日HH時mm分ss秒'}}</p>
+      <p class="dark">CREATER : {{tennisdata.startdata.creater}}</p>
+      <div class="row header">
+        <div align="center" class="col vPlayer dark">試合状況</div>
+        <div align="center" class="col vPlayer1 dark">{{tennisdata.startdata.player1+"/"+tennisdata.startdata.player3}}</div>
+        <div align="center" class="col vPlayer2 dark">{{tennisdata.startdata.player2+"/"+tennisdata.startdata.player4}}</div>
+      </div>
+      <div class="row">
+        <div align="center" class="col vServer dark">Server</div>
+        <div align="center" class="col vServer1" >{{tennisdata.PointText.server[0]}}</div>
+        <div align="center" class="col vServer2">{{tennisdata.PointText.server[1]}}</div>
+      </div>
+      <div class="row">
+        <div align="center" class="col vSet dark">SET</div>
+        <div align="center" class="col vSet1">{{tennisdata.PointText.text[5]}}</div>
+        <div align="center" class="col vSet2">{{tennisdata.PointText.text[4]}}</div>
+      </div>
+      <div class="row">
+        <div align="center" class="col vGame dark">GAME</div>
+        <div align="center" class="col vGame1">{{tennisdata.PointText.text[3]}}</div>
+        <div align="center" class="col vGame2">{{tennisdata.PointText.text[2]}}</div>
+      </div>
+      <div class="row">
+        <div align="center" class="col vScore dark">SCORE</div>
+        <div align="center" class="col vScore1">{{tennisdata.PointText.text[1]}}</div>
+        <div align="center" class="col vScore2">{{tennisdata.PointText.text[0]}}</div>
+      </div>
+    </div>
+  </div>
+</ul>
+</ion-content>
+</ion-view>

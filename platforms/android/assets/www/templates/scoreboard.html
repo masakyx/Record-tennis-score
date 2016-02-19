@@ -1,0 +1,115 @@
+<ion-view view-title="Tennis ScoreBoard:★{{agcreater}}★">
+<ion-content>
+<div class="row row1">
+  <div class="col col1 card card1 item item-text-wrap">
+      <p align="center">{{agplayer1}}</p>
+  </div>
+  <div class="col col1 card card1 item item-text-wrap">
+      <p align="center">{{agplayer2}}</p>
+  </div>
+</div>
+<div class="row row1">
+  <div class="list list1 col col1">
+    <h1 align="center"  class="player1count counttext">{{agset1}}</h1>
+    <h1 align="center"  class="player1count counttext">{{aggame1}}</h1>
+    <h1 align="center"  class="player1count counttext">{{agpoint1}}</h1>
+  </div>
+  <div class="list list1 col col1">
+    <h1 align="center"  class="counttext">SET</h1>
+    <h1 align="center"  class="counttext">GAME</h1>
+    <h1 align="center"  class="counttext">POINT</h1>
+  </div>
+  <div class="list list1 col col1">
+    <h1 align="center"  class="player2count counttext">{{agset2}}</h1>
+    <h1 align="center"  class="player2count counttext">{{aggame2}}</h1>
+    <h1 align="center"  class="player2count counttext">{{agpoint2}}</h1>
+  </div>
+</div>
+    <div class="row row1">
+      <div class="col col1 card card1 item" ng-show="strokebutton1" ng-click="strokeClick1()">
+        <img class="full-image1" src="img/stroke.jpg">
+        <h2 align="center" class="stroke">STROKE</h2>
+      </div>
+      <div class="col col1 card card1 item" ng-show="bolaybutton1" ng-click="bolayClick1()">
+        <img class="full-image1" src="img/bolay.jpg">
+        <h2 align="center" class="stroke">VOLLEY</h2>
+      </div>
+      <div class="col col1 card card1  item" ng-show="strokebutton2" ng-click="strokeClick2()">
+         <img class="full-image1" src="img/stroke.jpg">
+        <h2 align="center" class="stroke">STROKE</h2>
+      </div>
+      <div class="col col1 card card1  item" ng-show="bolaybutton2" ng-click="bolayClick2()">
+         <img class="full-image1" src="img/bolay.jpg">
+        <h2 align="center" class="stroke">VOLLEY</h2>
+      </div>
+    </div>
+<div class="row row1">
+  <div class="col col1 list list1" id="player1button">
+    <div class="card" id="checkserver2" ng-show="checkserver2">
+      <h3 align="center">SERVER</h3>
+      <h3 align="center">{{agserver2}}</h3>
+    </div>
+    <div class="card" id="checkreceiver2" ng-show="checkreceiver2">
+      <h3 align="center">RECEIVER</h3>
+      <h3 align="center">{{agreceiver2}}</h3>
+    </div>
+    <div id="serverbutton1" ng-show="serverbutton1">
+      <h4><input type="button" class="player1count" value="Service In" name="servicein1" ng-click="servicein1()"></h4>
+      <h4><input type="button" class="player1count" value="Service Ace" name="serviceace1" ng-click="serviceace1()"></h4>
+    </div>
+      <h4><input type="button" class="player1count" value="Fault" name="fault1" ng-click="fault1()" ng-show="faultbutton1"></h4>
+      <h4><input type="button" class="player1count" value="Double Fault" name="doublefault1" ng-click="doublefault1()" ng-show="doublefaultbutton1"></h4>
+    <div id="returnbutton1" ng-show="returnbutton1">
+      <h4><input type="button" class="player1count" value="Return In" name="returnin1" ng-click="returnin1()"></h4>
+      <h4><input type="button" class="player1count" value="Return Ace" name="returnace1" ng-click="returnace1()"></h4>
+      <h4><input type="button" class="player1count" value="Return Miss" name="returnmiss1" ng-click="returnmiss1()"></h4>
+    </div> 
+    <div id="shotbutton1" ng-show="shotbutton1">
+      <h4><input type="button" class="player1count" value="Winning Shot" name="win1" ng-click="win1()"></h4>
+      <h4><input type="button" class="player1count" value="Side Out" name="side1" ng-click="side1()"></h4>
+      <h4><input type="button" class="player1count" value="Back Out" name="back1" ng-click="back1()"></h4>
+      <h4><input type="button" class="player1count" value="Net" name="net1" ng-click="net1()"></h4>
+      <h4><input type="button" class="player1count" value="Unforced Error" name="unerror1" ng-click="unerror1()"></input>
+    </div>
+  </div>
+  <div class="list list1 col col1" id="player2button">
+    <div class="card" id="checkserver1" ng-show="checkserver1">
+      <h3 align="center">SERVER</h3>
+      <h3 align="center">{{agserver1}}</h3>
+    </div>
+    <div class="card" id="checkreceiver1" ng-show="checkreceiver1">
+      <h3 align="center">RECEIVER</h3>
+      <h3 align="center">{{agreceiver1}}</h3>
+    </div>
+    <div id="serverbutton2" ng-show="serverbutton2">
+      <h4><input type="button" class="player2count" value="Service In" name="servicein2" ng-click="servicein2()"></h4>
+      <h4><input type="button" class="player2count" value="Service Ace" name="serviceace2" ng-click="serviceace2()"></h4>
+    </div> 
+      <h4><input type="button" class="player2count" value="Fault" name="fault2" ng-click="fault2()" ng-show="faultbutton2"></h4>
+      <h4><input type="button" class="player2count" value="Double Fault" name="doublefault2" ng-click="doublefault2()" ng-show="doublefaultbutton2"></h4>
+    <div id="returnbutton2" ng-show="returnbutton2">
+      <h4><input type="button" class="player2count" value="Return In" name="returnin2" ng-click="returnin2()"></h4>
+      <h4><input type="button" class="player2count" value="Return Ace" name="returnace2" ng-click="returnace2()"></h4>
+      <h4><input type="button" class="player2count" value="Return Miss" name="returnmiss2" ng-click="returnmiss2()"></h4>
+    </div>
+    <div id="shotbutton2" ng-show="shotbutton2">
+      <h4><input type="button" class="player2count" value="Winning Shot" name="win2" ng-click="win2()"></h4>
+      <h4><input type="button" class="player2count" value="Side Out" name="side2"ng-click="side2()"></h4>
+      <h4><input type="button" class="player2count" value="Back Out" name="back2" ng-click="back2()"></h4>
+      <h4><input type="button" class="player2count" value="Net" name="net2" ng-click="net2()"></h4>
+      <h4><input type="button" class="player2count" value="Unforced Error" name="unerror2" ng-click="unerror2()"></input>
+      </div>
+  </div>
+  </div>
+</div>
+<div class="row row1">
+      <button type="button" class="middlebutton col col1 button icon-left ion-ios-loop-strong"  name="serverchange" ng-click="serverchange()">SERVER CHANGE</button>
+      <button type="button" class="middlebutton col col1 button icon-left ion-ios-loop-strong"  name="courtchange" ng-click="courtchange()">COURT CHANGE</button>
+</div>
+<div class="row row1">  
+      <button type="button" class="middlebutton col col1 button icon-left ion-ios-refresh" name="pointback" ng-click="pointback()">POINT BACK</button>
+      <button type="button" class="middlebutton col col1 button icon-left ion-power" name="finishgame" ng-click="finishgame()">試合終了</button>
+</div>
+
+</ino-content>
+</ion-view>

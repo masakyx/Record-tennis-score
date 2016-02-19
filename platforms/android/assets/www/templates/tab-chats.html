@@ -1,0 +1,26 @@
+<ion-view view-title="Chats">
+<ion-content> 
+    <ul>
+      <div  ng-repeat="message in messages">
+      <div class="card">
+      <div class="item item-text-wrap item-icon-left">
+        <i class="icon ion-chatbubble-working"></i>
+        <p>{{message.message}}</p>
+        <p>by {{message.name}}</p>
+      </div>
+      <div class="item item-divider" align="right">
+        <h5>{{message.time | date:'yyyy年MM月dd日HH時mm分ss秒'}}</h5>
+      </div>
+      </div>
+      </div>
+    </ul>
+</ion-content>
+        <ion-footer-bar class="bar-dark item-input-inset">
+              <label class="item-input-wrapper">
+                <input type="text" id="chatmessage" placeholder="Message"  ng-model="message" value={{message}}>
+              </label>
+              <button class="button button-royal" ng-click="submitclick()">
+                Submit
+              </button>
+        </ion-footer-bar>
+</ion-view>

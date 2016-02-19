@@ -1,0 +1,98 @@
+<ion-view view-title="Tennis 試合データの作成" hide-back-button="true">
+<ion-content ng-controller="DashCtrl">
+<div class="list">
+        <div class="item item-divider" align="center">シングルス・ダブルス</div>
+        <div class="row" >
+          <ion-radio ng-model="gametype" ng-value="1" ng-change="choseType()"class="col positive" name="gametype">
+            シングルス
+            </ion-radio>
+            <ion-radio ng-model="gametype" ng-value="2" ng-change="choseType()"class="col positive" name="gametype">
+            ダブルス
+            </ion-radio>
+        </div>
+        <div class="item item-divider " align="center">記録モードの選択</div>
+        <div class="row">
+          <ion-radio ng-model="modeChoice" ng-value="0" class="col positive" name="moderadio">
+            簡易モード
+            </ion-radio>
+            <ion-radio ng-model="modeChoice" ng-value="1" class="col positive" name="moderadio">
+            詳細モード
+            </ion-radio>
+        </div>
+        <div class="item item-divider " align="center">記録者 選手名</div>
+        <label class="item item-input">  
+          <span class="input-label">Creator</span>
+          <input type="text" id="creater" placeholder="入力してください" name="creater" ng-model="agcreater" value={{agcreater}}>
+        </label>
+        <hr>
+        <label class="item item-input">
+          <span class="input-label">{{player1}}</span>
+          <input type="text"placeholder="入力してください"name="player1" id="player1" ng-model="agplayer1" value={{agplayer1}}>
+        </label>
+        <label class="item item-input" ng-show="daubles">
+          <span class="input-label">{{player3}}</span>
+          <input type="text"placeholder="入力してください"name="player3" id="player3" ng-model="agplayer3" value={{agplayer3}}>
+        </label>
+        <hr>
+        <label class="item item-input">
+          <span class="input-label">{{player2}}</span>
+          <input type="text"placeholder="入力してください" name="player2" id="player2" ng-model="agplayer2" value={{agplayer2}}>
+        </label>
+        <label class="item item-input" ng-show="daubles">
+          <span class="input-label">{{player4}}</span>
+          <input type="text"placeholder="入力してください" name="player4" id="player4" ng-model="agplayer4" value={{agplayer4}}>
+        </label>
+        <div class="item item-divider" align="center">セットカウント</div>
+        <div class="row">
+          <ion-radio ng-model="setChoice" ng-value="1" class="col positive" name="setradio">
+            1
+            </ion-radio>
+            <ion-radio ng-model="setChoice" ng-value="3" class="col positive" name="setradio">
+            3
+            </ion-radio>
+            <ion-radio ng-model="setChoice" ng-value="5" class="col positive" name="setradio">
+            5
+            </ion-radio>
+        </div>
+        <div class="item item-divider" align="center">ゲームカウント</div>
+        <div class="row">
+          <ion-radio ng-model="gameChoice" ng-value="4" class="col positive" name="gameradio">
+            4
+            </ion-radio>
+            <ion-radio ng-model="gameChoice" ng-value="6" class="col positive" name="gameradio">
+            6
+            </ion-radio>
+            <ion-radio ng-model="gameChoice" ng-value="8" class="col positive" name="gameradio">
+            8
+            </ion-radio>
+        </div>
+        <div class="item item-divider" align="center">タイブレーク・デュース</div>
+        <li class="item item-toggle">タイブレーク
+          <div name="tiebreak">
+          <label class="toggle toggle-positive">
+            <input type="checkbox" id="tiebreak" ng-model="agtiebreak" ng-value=true>
+            <div class="track">
+              <div class="handle" name="tiebreak">
+              </div>
+            </div>
+          </label>
+        </div>
+        </li>
+        <li class="item item-toggle">デュース
+          <label class="toggle toggle-positive">
+            <input type="checkbox" name="deuce" id="deuce" ng-model="agdeuce" ng-value=true>
+            <div class="track">
+              <div class="handle">
+              </div>
+            </div>
+          </label>
+        </li>
+        <div class="padding">
+          <button type="button"class="button button-block button-positive" ng-click="gamestartclick()" name="createdata">
+            試合開始
+        </button>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

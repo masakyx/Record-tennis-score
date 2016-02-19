@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/magic.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/ionic.contrib.frostedGlass.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> -->
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+   -->
+              <!-- jquery------------------------------------------------------------- -->
+  <script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+         ga('create', 'UA-62506453-2', 'auto');
+         ga('send', 'pageview');
+</script>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- ionic/angularjs js -->
+    <!--  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>-->
+  <script src="lib/ionic/js/ionic.bundle.js"></script>
+  <!-- <script src="/socket.io/socket.io.js"></script> -->
+    <!-- cordova script (this will be a 404 during development) -->
+    
+    <!--    <script src="https://pacific-chamber-3858.herokuapp.com/socket.io/socket.io.js"></script> -->
+    <!--<script src="socket.io/socket.io.js"></script> -->
+    <!-- local version -->
+    <!-- <script src="http://localhost:5000/socket.io/socket.io.js"></script>-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.7/socket.io.js "></script>
+
+    <script src="lib/ngCordova/dist/ng-cordova.js"></script>
+  <!--  <script src="http://10.0.2.2:5000/socket.io/socket.io.js"></script>-->
+    <script src="js/app.js"></script>
+    <script src="js/flick.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/ionic.contrib.frostedGlass.js"></script>
+    <script src="cordova.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.5/angular-animate.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min.js"></script>
+
+    <script src= "https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular-touch.min.js"></script>
+
+
+  </head>
+  <body ng-app="starter">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-nav-bar class="bar-positive">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+    </ion-nav-bar>
+    <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+    <ion-nav-view>
+      <p>Hello world</p>
+    </ion-nav-view>
+  </body>
+</html>

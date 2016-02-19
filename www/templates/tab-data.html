@@ -1,0 +1,24 @@
+<ion-view view-title="Data">
+  <ion-content ng-swipe-right="data.showDelete=true;" ng-swipe-left="data.showDelete=false;">
+  <!--<ul>
+    <div class="list">
+      <div ng-repeat="tennisdata in tennisdatas">
+        <a class="item item-icon-right" href="#/tab/data/datadetail/{{tennisdata._id}}">
+          {{tennisdata.startdata.player1}}  {{tennisdata.startdata.player3}}  -VS-  {{tennisdata.startdata.player2}}  {{tennisdata.startdata.player4}}
+          <p>{{tennisdata.startdata.starttime | date:'yyyy年MM月dd日HH時mm分ss秒'}}</p>
+          <i class="ion-chevron-right icon"></i>
+        </a>
+      </div>
+    </div>
+  </ul>-->
+  <ion-list show-delete="data.showDelete">
+  <ion-item ng-repeat="tennisdata in tennisdatas | orderBy:'-startdata.starttime'"item="tennisdata" ng-click="dataclick(tennisdata.mode,tennisdata._id)" class="item-remove-animate item-icon-right">
+          {{tennisdata.startdata.player1}}  {{tennisdata.startdata.player3}}  -VS-  {{tennisdata.startdata.player2}}  {{tennisdata.startdata.player4}}
+          <p>{{tennisdata.startdata.starttime | date:'yyyy年MM月dd日HH時mm分ss秒'}}</p>
+          <i class="ion-chevron-right icon"></i>
+          <ion-delete-button class="ion-minus-circled" ng-click="deletetennisdata(tennisdata._id)"></ion-delete-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
+      

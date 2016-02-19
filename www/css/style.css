@@ -1,0 +1,77 @@
+/* Empty. Add your own CSS if you like */
+.backimage1{
+  background-size:100%;
+  background-image:url(../img/servermode.jpg);
+  background-repeat:no-repeat;
+}
+.backimage2{
+  background-size:100%;
+  background-image:url(../img/shotmode.jpg);
+  background-repeat:no-repeat;
+}
+.player1count,.player2count,.counttext{
+  border:medium solid black;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  font-size:100%;
+  width:100%;
+}
+.counttext{
+  font-size:130%;
+  font-weight:bold;
+}
+.stroke{
+  font-weight:bold;
+}
+.player1count{
+  background-color:#ffd500;
+}
+.player2count{
+  background-color:#00ffff;
+}
+.middlebutton{
+  font-size:100%;
+  width:100%;
+}
+.list1{
+  margin-bottom:0px;
+}
+.col1,.row1{
+  padding:2px;
+}
+.card1{
+  margin:10px 5px;
+  text-align:center;
+}
+.confirmcard1{
+  background-color:#ffd500;
+  margin-top:3px;
+}
+.confirmcard2{
+  background-color:#00ffff;
+  margin-top:3px;
+}
+.full-image1{
+  width:40%;
+}
+.row2{
+  padding:2px;
+}
+#checkserver1,#checkreceiver1{
+  background-color:#ffd500;
+}
+#checkserver2,#checkreceiver2{
+  background-color:#00ffff;
+}
+.tennistable{
+  border:2px;
+}
+.vPlayer1,.vPlayer2,.vServer,.vSet,.vGame,.vScore{
+  background-color:#cccccc;
+}
+.vPlayer,.vPlayer1,.vPlayer2,.vServer,.vServer1,.vServer2,.vSet,.vSet1,.vSet2,.vGame,.vGame1,.vGame2,.vScore,.vScore1,.vScore2{
+  border:solid 1px black;
+}
+.hugeh1{
+  font-size:25px;
+}

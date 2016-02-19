@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3CB249D5-C382-4D13-BEAF-CA4440F3BBF0</string>
+	<key>IDESourceControlProjectName</key>
+	<string>test-tab</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>592B3A74275E29B93489402F6DC903761CAEA209</key>
+		<string>github.com:masakyx/test-tab-heroku.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>platforms/ios/test-tab.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>592B3A74275E29B93489402F6DC903761CAEA209</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:masakyx/test-tab-heroku.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>592B3A74275E29B93489402F6DC903761CAEA209</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>592B3A74275E29B93489402F6DC903761CAEA209</string>
+			<key>IDESourceControlWCCName</key>
+			<string>test-tab-heroku</string>
+		</dict>
+	</array>
+</dict>
+</plist>
